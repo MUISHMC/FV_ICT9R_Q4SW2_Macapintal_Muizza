@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style type="text/css">
+	#shej {
+		width: 200px;
+		height: 170px;
+	}
+	#Intro {
+		font-family: Kirby;
+		size: 100px;
+		background-color: ghostwhite;
+	}
+
+	button {
+		font-family: CCAstroCity;
+		background-color: #9AC8CD;
+	}
+
+	#CH {
+		font-family: CCAstroCity ;
+		size: 500px;
+	}
+
+	#cth {
+font-family: CCAstroCity ;
+		size: 500px;
+	}
+
+	#x {
+		font-family: CCAstroCity;
+	}
+
+	#y {
+		font-family: CCAstroCity;
+	}
+
+	#num1, #num2{
+		background-color: #E1F7F5;
+
+	}
+
+	body {
+		background-color: grey;
+	}
+
+	#box {
+		background-color: ghostwhite;
+	}
+
+	#exam {
+		width: 200px;
+		height: 200px;
+	}
+	</style>
+</head>
+<body>
+	<center>
+		<table>
+			<tr><td><img src="shejo.gif" id="shej">
+			</td> 
+
+			<td>
+			<div>
+			<h2 id="Intro"> Shejo is having a mental crisis <br> because of her math exam! Help her by calculating numbers.</h2>
+			</div> 
+			</td> 
+			</tr>
+			
+		</table>	
+	</center>
+
+	<center>
+	<div class="col-md-6" id="box">
+		<form class="form-group">
+			<label id="x">Enter a value for x</label>
+				<input type="number" class="form-control" id="num1">
+			<br>
+			<label id="y">Enter a value for y</label>
+			<input type="number" class="form-control" id="num2">
+			<br>
+			<button type="submit" id="submit" onclick="add()"> x + y </button> 
+			<button type="submit" id="submit" onclick="subtract()"> x - y </button> 
+			<button type="submit" id="submit" onclick="multiply()"> x * y </button> <br> <br>
+			<button type="submit" id="submit" onclick="divide()"> x/y </button> 
+			<button type="submit" id="submit" onclick="check()"> check if x is = to y </button>
+			<br> <br>
+			<details ontoggle="message()">
+				<summary id="CH"> Instructions </summary>
+				<i id="cth"> Click the buttons above to calculate.</i>
+			</details>
+		</form>
+
+		
+	</div>
+	</center>
+
+	<script type="text/javascript">
+	function add(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var	add = Number(num1) + Number(num2);
+		
+		alert(add);
+	}
+	function subtract(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var	subtract = Number(num1) - Number(num2);
+		
+		alert(subtract);
+	}
+	function multiply(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var	multiply= Number(num1) * Number(num2);
+		
+		alert(multiply);
+	}
+	function divide(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var	divide = Number(num1) / Number(num2);
+		
+		alert(divide);
+	}
+	function check(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var	check = (Number(num1) ==  Number(num2));
+		
+		alert(check);
+	}
+
+
+
+</script>
+
+</body>
+</html>
